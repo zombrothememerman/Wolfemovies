@@ -8,17 +8,18 @@
     body {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start; /* text stays at top */
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
+      padding-top: 50px; /* space from top */
       text-align: center;
       font-family: Arial, sans-serif;
       background-color: #333; /* dark grey */
-      color: #fff; /* white text for contrast */
+      color: #fff; /* white text */
     }
 
     a {
-      color: #1E90FF; /* brighter blue link */
+      color: #1E90FF;
       text-decoration: none;
     }
 
@@ -28,16 +29,13 @@
 
     img {
       margin-top: 20px;
-      max-width: 600px; /* original GIF is ~200px, scaled 3x */
-      transform: scale(3); /* 3x bigger */
+      width: 600px; /* 3x original size ~200px */
+      height: auto; /* maintain aspect ratio */
     }
   </style>
 </head>
 <body>
-  <div>
-    <p>Redirecting… If you are not redirected (lame), <a href="https://desktop-jvhv9gk.tailcfbd0.ts.net">click here</a>.</p>
-    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNm0yZHkwdXB3bW9hMXEzYXRtMm9qZXNuN3VnZ2JoN2JqYjNtdzBsNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/X8WnZJvoVqvbtSWmEV/giphy.gif" alt="Loading GIF">
-  </div>
+  <p>Redirecting… If you are not redirected (lame), <a href="https://desktop-jvhv9gk.tailcfbd0.ts.net">click here</a>.</p>
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNm0yZHkwdXB3bW9hMXEzYXRtMm9qZXNuN3VnZ2JoN2JqYjNtdzBsNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/X8WnZJvoVqvbtSWmEV/giphy.gif" alt="Loading GIF">
 </body>
 </html>
-
